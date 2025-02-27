@@ -89,23 +89,40 @@ ii. Go to settings >> secrets and variables >> actions >> add new repository sec
 
 
 
-<img src="https://github.com/user-attachments/assets/871d64a1-7bca-433a-af22-7a7b7a4491a8" width="500"><br><br>    
+<img src="https://github.com/user-attachments/assets/871d64a1-7bca-433a-af22-7a7b7a4491a8" width="500"><br>  
 
 
 
 
 
-iii. Go to the main.yml file in your repository and change the bucket name and region and remove public from the code.    
+iii. Navigate to the main.yml file in your repository under .github/workflows, update the bucket name and AWS region, and remove any references to public. You can copy the main.yml file from the repository and modify it as needed.<br>  
 
 
 
 
-<img src="https://github.com/user-attachments/assets/1824d73e-9821-4e3d-97b7-101f3ddeba33" width="500">    
+<img src="https://github.com/user-attachments/assets/1824d73e-9821-4e3d-97b7-101f3ddeba33" width="500"><br>    
 
 
 
+iv. Create an index file in the same repository **oustide** the .github/workflow folder. 
 
-iv. Create an index file in the same repository.    
+```yaml
+<html xmlns="
+http://www.w3.org/1999/xhtml"
+>
+<head>
+<title>My Website Home Page</title>
+</head>
+<body>
+<h1>Welcome to my website</h1>
+<p>Now hosted on Amazon S3!</p>
+</body>
+</html>
+```
+
+   
+
+
 
 
 
